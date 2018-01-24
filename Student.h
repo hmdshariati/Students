@@ -5,27 +5,33 @@
  */
 
 /* 
- * File:   Students.h
+ * File:   Student.h
  * Author: hamid
  *
  * Created on December 16, 2017, 11:08 AM
  */
+#include <string>
+#include <iostream>
 
-#ifndef STUDENTS_H
-#define STUDENTS_H
-
-class Students {
+using namespace std;
+class Student {
 public:
-    Students();
-    Students(char f,char l);//a constructor with first name and last name 
-    Students(int t,int p,int r); //a constructor with the information of units
-    Students(const Students& orig);
-    virtual ~Students();
-    
+    Student();
+    Student(string f,string l);//a constructor with first name and last name 
+    Student(int t,int p,int r); //a constructor with the information of units
+    Student(const Student& orig);
+    virtual ~Student();
+    void setPar(int par1,int par2);
+    void setPar(string& par1,string par2);
+    string const getNation();
+    string const getFname();
+    string const getLname();
+    int const getStdno();
+    void setUnits(int total, int passed);
+    int const getPassed();
+    int const getRemain();
+    int const getTotal();
 private:
-    char nationalCode,fname,lname,studentNo;
+    string nationalCode,fname,lname,studentNo;
     int passedUnits,totalUnits,remainUnits;
 };
-
-#endif /* STUDENTS_H */
-

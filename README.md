@@ -3,7 +3,7 @@ second practice of C++ (friend functions + const)<br />
 give comma seperated input with ; (semicolon) seperated. <br />
 ## for example
 firstname,lastname,average;hamid,shariati,12;mostafa,karami,16;ali,jafari,20;...<br />
-###expected output
+### expected output
 ```
 	type students list with ; delimiter and comma seperated for each student:firstname,lastname,average;hamid,shariati,12;mostafa,karami,16;ali,jafari,20
 	new virtual student registered

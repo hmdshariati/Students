@@ -4,7 +4,7 @@ give comma seperated input with ; (semicolon) seperated. <br />
 ## for example
 firstname,lastname,average;hamid,shariati,12;mostafa,karami,16;ali,jafari,20;...<br />
 ###expected output
-	```
+```
 	type students list with ; delimiter and comma seperated for each student:firstname,lastname,average;hamid,shariati,12;mostafa,karami,16;ali,jafari,20
 	new virtual student registered
 	new virtual student registered
@@ -28,4 +28,4 @@ firstname,lastname,average;hamid,shariati,12;mostafa,karami,16;ali,jafari,20;...
 	a student object destroyed
 	
 	RUN FINISHED; exit value 0; real time: 18s; user: 0ms; system: 0ms
-	```
+```

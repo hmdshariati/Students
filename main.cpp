@@ -26,10 +26,10 @@ using namespace std;
 int main(int argc, char** argv) {
    
     string input;
+    cout << "type students list with ; delimiter and comma seperated for each student:";
     cin >> input;
     stringstream ss( input );
     vector<string> result,record;
-    cout << "type students list with ; delimiter and comma seperated for each student:"
     while( ss.good() )
     {
         string substr;
@@ -49,11 +49,9 @@ int main(int argc, char** argv) {
             if (ss.peek() == ',')
             ss.ignore();
         }
-        cout << "++++++++" << record[0] << endl;
-        string arg1 = "11";
-        string arg2 = "333";
-        cout << "------------------------------"<<i<<endl;
-        student[i].setProperties(arg1,arg2,1);
+        cout << i<<"------------------------------";
+        cout << record[i] << endl;
+        student[i].setProperties("test1","test2",12.5);
         
         cout << student[i].getFname() << " " 
                 << student[i].getLname() << " "<< endl;

@@ -27,11 +27,14 @@ public:
     string const getFname();
     string const getLname();
     int const getStdno();
+    void setAverage(double avg);
     void setUnits(int total, int passed);
+    void setProperties(string f,string l, double avg);
     int const getPassed();
     int const getRemain();
     int const getTotal();
 private:
     string nationalCode,fname,lname,studentNo;
     int passedUnits,totalUnits,remainUnits;
+    double average;
 };

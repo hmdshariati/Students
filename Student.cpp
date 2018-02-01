@@ -43,6 +43,13 @@ Student::~Student() {
     cout << "a student object destroyed" << endl ;
 }
 
+void Student::setProperties(string f,string l, double avg)
+{
+    setAverage(avg);
+    setPar(fname,f);
+    setPar(lname,l);
+};
+
 // a set function for char variables(at the first version)
 void Student::setPar( string& par1,string  par2)
 {
@@ -105,6 +112,18 @@ void Student::setUnits(int total, int passed)
     }
 }
 
+// set the average
+void Student::setAverage(double avg)
+{
+    if (avg > 12){
+        cout << "can select more than 12" << endl;
+    }
+    else{
+        cout << "can't select more than 12" << endl;
+    }
+    average = avg;
+}
+
 //a function to show passed units of this  student.
 int const Student::getPassed()
 {
@@ -131,6 +150,6 @@ int const Student::getTotal()
         return totalUnits;
     }
     else{
-        cout << "total units is not declared" << endl;        
+        cout << "total units is not declared" << endl;       
     }
 }
